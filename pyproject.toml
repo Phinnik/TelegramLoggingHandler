@@ -1,0 +1,16 @@
+[project]
+name = "telegram_logging_handler"
+version = "0.0.1"
+authors = [{ name = "Philipp Zdorov" }]
+description = "python logging handler for telegram"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["logging", "telegram"]
+dependencies = ["requests"]
+
+[project.scripts]
+get_tg_chat_id = "scripts.get_chat_id:main"
+
+[build-system]
+requires = ["setuptools >= 40.9.0"]
+build-backend = "setuptools.build_meta"
